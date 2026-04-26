@@ -3,7 +3,7 @@ import "./globals.css";
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
-  variable:"--font-poppins",
+  variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -23,6 +23,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`h-full antialiased`}
+      data-theme="light"
     >
       <body className={`min-h-full flex flex-col ${poppins.className}`}>{children}</body>
     </html>
